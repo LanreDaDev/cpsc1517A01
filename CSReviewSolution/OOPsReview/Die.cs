@@ -118,7 +118,7 @@ namespace OOPsReview
 
 
         // syntax public classname([list of parameters]) {Coding body}
-
+ 
 
         // default constructor 
         // this is similar to having a system constructor
@@ -155,6 +155,20 @@ namespace OOPsReview
             FaceValue = _rnd.Next(1, Sides + 1);
         }
 
+        // Turn
+        public int Player1{get; set;}
+        public int Player2{get; set;}
+
+        public Turn()
+        {
+
+        }
+
+        public Turn(int player1, int player2)
+        {
+            Player1 = player1;
+            Player2 = player2;
+        }
     }
 }
 
